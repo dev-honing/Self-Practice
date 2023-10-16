@@ -19,10 +19,13 @@
 // 새로운 배열을 선언하고 배열에 요소가 있는지 확인해보자.
 function random(){
   const arr = [];
-  const randomNum = Math.floor(Math.random()*10);
-  // 조건식 작성: 배열 arr의 요소 중에 randomNum의 값이 없으면 arr.push() 메서드로 요소를 생성
-  if(arr.indexOf(randomNum) === -1 ){
-    arr.push(randomNum);
+  // 3개씩 뽑기 위해 for문에 넣음
+  for(i=0; i<3; i++){
+    const randomNum = Math.floor(Math.random()*10);
+    // 조건식 작성: 배열 arr의 요소 중에 randomNum의 값이 없으면 arr.push() 메서드로 요소를 생성
+    if(arr.indexOf(randomNum) === -1 ){
+      arr.push(randomNum);
+    }
   }
   console.log(arr);
 }
