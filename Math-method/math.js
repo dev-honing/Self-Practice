@@ -21,7 +21,7 @@ function random(){
   const arr = [];
   // 3개씩 뽑기 위해 for문에 넣음
   for(i=0; i<3; i++){
-    const randomNum = Math.floor(Math.random()*10);
+    const randomNum = Math.floor(Math.random()*15+1); // 1~15범위로 변경
     // 조건식 작성: 배열 arr의 요소 중에 randomNum의 값이 없으면 arr.push() 메서드로 요소를 생성
     if(arr.indexOf(randomNum) === -1 ){
       arr.push(randomNum);
@@ -29,9 +29,18 @@ function random(){
       i--;
     }
   }
+  console.clear(); // 확인을 위해 이전에 출력된 콘솔을 삭제
+  console.count(); // 몇 번 출력했는지 연번을 부여
+  // array.sort() 메서드에 콜백함수 형식으로 로직 작성
+  arr.sort(function (min, max){ 
+    return min - max;
+  })
   console.log(arr);
 }
 setInterval(random, 100);
 // ! 중복된 수가 출력되면 2가지만 뽑는 경우가 발생했다.
 // ? 중복을 없애면서 별개의 3가지 수를 뽑으려면 어떻게 해야할까?
 // * else 식에서 감소식으로 뒤로 다시 돌아가게 하면 된다!
+
+// * +@. 배열을 정렬하기
+// arr.sort() 메서드를 사용하며 return 값으로 a-b 오름차순 정렬을 해준다.
