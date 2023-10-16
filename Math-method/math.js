@@ -6,7 +6,13 @@
 const arr = [1, 2, 3, 4, 5];
 // Math.random() 메서드는 0~1 중 랜덤의 값을 뽑아주는 메서드이다.(1은 미포함)
 
-console.log(Math.random()); // 소숫점이 있는 랜덤 값이 출력됨을 확인
+// console.log(Math.random()); // 소숫점이 있는 랜덤 값이 출력됨을 확인
 
 // Math.floor() 메서드로 소숫점 뒤를 버리면?
-console.log(Math.floor(Math.random())); // 0이 출력됨
+// console.log(Math.floor(Math.random())); // 0이 출력됨
+
+// 10을 곱하고 함수화 한 뒤, 계속 찍어보면?
+function randomNum(){
+  console.log(Math.floor(Math.random()*10));
+}
+setInterval(randomNum, 100) // 0~9까지 출력됨을 확인
