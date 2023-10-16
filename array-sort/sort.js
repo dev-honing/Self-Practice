@@ -16,3 +16,10 @@ const numArr = [1, 30, 1000, 800]; // 1-1000까지 오름차순으로 정렬될�
 numArr.sort(function(a,b){
   return a-b;
 })
+console.log(numArr); // 오름차순 정렬
+
+// 내림차순 정렬도 해보자
+numArr.sort(function(a,b){
+  return b-a;
+})
+console.log(numArr); // 내림차순 정렬
