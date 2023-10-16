@@ -2,6 +2,7 @@
 // array.sort() 메서드는 문자열을 정렬하는 메서드이다.
 const arr = ['apple', 'telephone', 'question', 'banana', 'pear', 'answer'];
 console.log(arr.sort()); // a-z까지 오름차순 정렬하는 메서드
+console.log(arr.reverse()); // z-a까지 내림차순 정렬하는 메서드
 
 
 const numArr = [1, 30, 1000, 800]; // 1-1000까지 오름차순으로 정렬될까?
@@ -15,4 +16,3 @@ const numArr = [1, 30, 1000, 800]; // 1-1000까지 오름차순으로 정렬될�
 numArr.sort(function(a,b){
   return a-b;
 })
-console.log(numArr); // 자릿수를 반영해서 숫자를 잘 처리한 모습을 확인!
