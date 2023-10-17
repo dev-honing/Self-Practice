@@ -9,5 +9,5 @@ for(i=0; i < arrayB.length; i++){
 // console.log(arrayA); // [ '피카츄', '라이츄', '파이리' ]
 // console.log(arrayB); // [ '피카츄', '라이츄', '파이리' ]
 
-// 선언 방식
+// 선언 방식 - array.map() 메서드 활용
 const arrayC = arrayA.map(data => data);
