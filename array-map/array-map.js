@@ -6,5 +6,8 @@ const arrayB = ["피카츄", "라이츄", "파이리"];
 for(i=0; i < arrayB.length; i++){
   arrayA[i] = arrayB[i];
 }
-console.log(arrayA); // [ '피카츄', '라이츄', '파이리' ]
-console.log(arrayB); // [ '피카츄', '라이츄', '파이리' ]
+// console.log(arrayA); // [ '피카츄', '라이츄', '파이리' ]
+// console.log(arrayB); // [ '피카츄', '라이츄', '파이리' ]
+
+// 선언 방식
+const arrayC = arrayA.map(data => data);
